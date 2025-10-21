@@ -75,19 +75,6 @@ button {
   width: 2px;
 }
 
-/* .how_ItWorks {
-  background: linear-gradient(90.32deg, #AC82FF -8.31%, #FFFFFF 148%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  font-family: "DM Sans", sans-serif;
-  padding: 13px 24px;
-  border: 1px solid;
-  border-image-source: linear-gradient(354.17deg, #7129FF 3.91%, #BD00FD 72.59%);
-  margin-bottom: 28px;
-} */
-
 .how_ItWorks {
   position: relative;
   background: linear-gradient(90.32deg, #AC82FF -8.31%, #FFFFFF 148%);
@@ -112,11 +99,57 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(354.17deg, #7129FF 3.91%, #BD00FD 72.59%);
+  background: linear-gradient(90.32deg, #AC82FF -8.31%, #FFFFFF 148%);
   border-radius: inherit;
   z-index: -1;
   padding: 2px;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+}
+
+.benefit_card {
+  background-image: url('/benefits_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.emp_bg {
+  background-image: url('/emp_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 964px;
+}
+
+
+.service_bg {
+  background-image: url('/service_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 752px;
+  height: 554px;
+}
+
+.faq_text {
+  background: linear-gradient(354.17deg, #7129FF 3.91%, #BD00FD 72.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.grad_box {
+  width: 17;
+  height: 17;
+  background: linear-gradient(354.17deg, #7129FF 3.91%, #FD00E3 72.59%);
+}
+
+.bottom_border {
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(354.17deg, #7129FF 3.91%, #BD00FD 72.59%);
+  border-image-slice: 1;
+  border-image-width: 0 0 1px 0;
+  padding-bottom: 28px;
 }

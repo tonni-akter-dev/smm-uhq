@@ -1,0 +1,51 @@
+import Image from 'next/image'
+import React from 'react'
+import b1 from '../../../public/b1.png'
+import b2 from '../../../public/b2.png'
+import b3 from '../../../public/b3.png'
+import b4 from '../../../public/b4.png'
+
+const WhyChooseUs = () => {
+    return (
+        <div className='mt-[150px] flex flex-col justify-center items-center mb-[200px]'>
+            <button className='how_ItWorks'>Why Choose Us</button>
+            <h1 className='text-[60px] font-black mb-[90px]'>The Benefits of Choosing Our <br /> Advanced SMM Panel Services</h1>
+            <div className='lg:px-[235px] px-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[46px]'>
+                    <div className='benefit_card w-[328px]'>
+                        <div className='p-6 flex justify-end'>  <Image className='mb-11' src={b1} alt="" /></div>
+                        <div className='pl-7 pb-[38px] pr-3'>
+                            <h5 className='text-[30px] font-semibold mb-3'> Quality</h5>
+                            <p className='text-base '>{`Experience excellence with our high-quality SMM services. At SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand`}.</p>
+                        </div>
+                    </div>
+                    <div className='benefit_card w-[328px]'>
+                        <div className='p-6 flex justify-end'>  <Image className='mb-11' src={b2} alt="" /></div>
+                        <div className='pl-7 pb-[38px] pr-3'>
+                            <h5 className='text-[30px] font-semibold mb-3'> Affordability</h5>
+                            <p className='text-base '>{`Experience excellence with our high-quality SMM services. At SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}</p>
+                        </div>
+                    </div>
+                    <div className='benefit_card w-[328px]'>
+                        <div className='p-6 flex justify-end'>  <Image className='mb-11' src={b3} alt="" /></div>
+                        <div className='pl-7 pb-[38px] pr-3'>
+                            <h5 className='text-[30px] font-semibold mb-3'> Speed</h5>
+                            <p className='text-base '>{`Experience excellence with our high-quality SMM services. At SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}</p>
+                        </div>
+                    </div>
+                    <div className='benefit_card w-[328px]'>
+                        <div className='p-6 flex justify-end'>  <Image className='mb-11' src={b4} alt="" /></div>
+                        <div className='pl-7 pb-[38px] pr-3'>
+                            <h5 className='text-[30px] font-semibold mb-3'> Quality</h5>
+                            <p className='text-base '>{`Experience excellence with our high-quality SMM services. At SMM VIP, we're committed to delivering top-tier solutions that elevate your online presence and engagement, ensuring exceptional results for your brand.`}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    )
+}
+
+export default WhyChooseUs
