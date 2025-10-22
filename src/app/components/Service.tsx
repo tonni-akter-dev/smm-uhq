@@ -9,20 +9,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import yt from '../../../public/youtube.png'
 import ball from '../../../public/ball.png'
+import faq_layer from '../../../public/faq_layer.png';
 
 const Service = () => {
   return (
-    <div className='lg:px-[227px] px-4 mb-[294px] pt-[70px] relative z-50'>
-      <div className="flex lg:flex-row flex-col items-center gap-[123px]">
+    <div className='service_wrapper lg:px-[227px] px-4 lg:mb-[294px] lg:pt-[70px] relative z-50'>
+      <div className="flex lg:flex-row flex-col justify-center items-center service_gap gap-[123px]">
         <div className='relative service_bg pl-[95px] pr-[74px] '>
-          <p className='text-base font-medium pt-10'>Our Platforms</p>
-          <div className='pt-[99px]'>
-            <div className='flex  lg:gap-[138px]'>
+          <p className='text-base font-medium pt-10 platform'>Our Platforms</p>
+          <div className='pt-[50px] lg:pt-[99px] service_icons'>
+            <div className='flex  lg:gap-[138px] icons'>
               <Link href={`#`}><Image src={s1} alt="" /> </Link>
               <Link href={`#`}><Image src={s2} alt="" /> </Link>
               <Link href={`#`}><Image src={s3} alt="" /> </Link>
             </div>
-            <div className='flex  lg:gap-[138px] lg:mt-[97px]'>
+            <div className='flex  lg:gap-[138px] icons service_mt lg:mt-[97px]'>
               <Link href={`#`}><Image src={s4} alt="" /> </Link>
               <Link href={`#`}><Image src={s5} alt="" /> </Link>
               <Link href={`#`}><Image src={s6} alt="" /> </Link>
@@ -30,17 +31,22 @@ const Service = () => {
           </div>
         </div>
 
-          <Image className='absolute left-[130px] bottom-[20%]' src={ball} alt="" />
+        <Image className='absolute left-[130px] bottom-[20%]' src={ball} alt="" />
         <div className='max-w-[590px] w-full'>
           <button className='how_ItWorks mb-10'>OUR Services</button>
-          <h1 className='text-[60px] font-medium capitalize mb-7'>Explore Our Most <br /> Popular SMM Tools</h1>
-          <p className='text-[#898989B2] font-medium mb-[37px]'>At SMM VIP, we pride ourselves on delivering top-tier Social Media Marketing (SMM) services designed to elevate your online presence and drive unparalleled engagement. With our comprehensive suite of solutions, we empower businesses of all sizes to harness the full potential of social media platforms.</p>
-          <button className="btn_bg1 text-white">
-            See All Our Services
-          </button>
+          <h1 className='heading text-[60px] font-medium capitalize mb-7'>Explore Our Most <br /> Popular SMM Tools</h1>
+          <p className='text-[#898989B2] font-medium md:text-lg text-sm mb-[37px]'>At SMM VIP, we pride ourselves on delivering top-tier Social Media Marketing (SMM) services designed to elevate your online presence and drive unparalleled engagement. With our comprehensive suite of solutions, we empower businesses of all sizes to harness the full potential of social media platforms.</p>
+          <div>
+            <button className="btn_bg1  text-white">
+              See All Our Services
+            </button>
+            <Image className='absolute  lg:block hidden right-[130px] bottom-[10%]' src={ball} alt="" />
+          </div>
         </div>
       </div>
-      <Image className='absolute right-7 top-[20%]' src={yt} alt="" />
+      <Image className='absolute yt_size right-7 top-[-7%] md:top-[20%]' src={yt} alt="" />
+
+      <Image className='absolute top-0 right-0 lg:block hidden' src={faq_layer} alt="" />
     </div>
   )
 }
