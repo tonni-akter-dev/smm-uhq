@@ -7,6 +7,7 @@ import WhyChooseUs from './components/WhyChooseUs'
 import Empowering from './components/Empowering'
 import Service from './components/Service'
 import Faq from './components/Faq'
+import Footer from './components/Footer'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Empowering />
       <Service />
       <Faq />
+      <Footer />
 
     </div>
   )
