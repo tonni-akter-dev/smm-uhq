@@ -7,12 +7,14 @@ import s5 from '../../../public/s5.png';
 import s6 from '../../../public/s6.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import yt from '../../../public/youtube.png'
+import ball from '../../../public/ball.png'
 
 const Service = () => {
   return (
-    <div className='lg:px-[227px] px-4 mb-[294px] pt-[70px]'>
+    <div className='lg:px-[227px] px-4 mb-[294px] pt-[70px] relative z-50'>
       <div className="flex lg:flex-row flex-col items-center gap-[123px]">
-        <div className='service_bg pl-[95px] pr-[74px] '>
+        <div className='relative service_bg pl-[95px] pr-[74px] '>
           <p className='text-base font-medium pt-10'>Our Platforms</p>
           <div className='pt-[99px]'>
             <div className='flex  lg:gap-[138px]'>
@@ -28,6 +30,7 @@ const Service = () => {
           </div>
         </div>
 
+          <Image className='absolute left-[130px] bottom-[20%]' src={ball} alt="" />
         <div className='max-w-[590px] w-full'>
           <button className='how_ItWorks mb-10'>OUR Services</button>
           <h1 className='text-[60px] font-medium capitalize mb-7'>Explore Our Most <br /> Popular SMM Tools</h1>
@@ -37,6 +40,7 @@ const Service = () => {
           </button>
         </div>
       </div>
+      <Image className='absolute right-7 top-[20%]' src={yt} alt="" />
     </div>
   )
 }

@@ -1,11 +1,14 @@
 import React from 'react'
 import arrow from '../../../public/arrow.png';
+import emp_layer from '../../../public/emp_layer.png';
+import service_right_shadow from '../../../public/service_right_shadow.png';
+import emp_left_layer from '../../../public/emp_left_layer.png';
 import Image from 'next/image';
 
 const Empowering = () => {
     return (
         <div className='pt-[109px] lg:px-[230px] px-4 mb-[252px] relative'>
-            <div className='pt-[51px] pl-[90px] emp_bg'>
+            <div className='pt-[51px] pl-[90px] emp_bg relative z-50'>
                 <h1 className='text-[60px] font-medium mb-[94px]'>Empowering Resellers with the Fastest  <br /> and Most Reliable SMM Panel</h1>
                 <div className="flex gap-[170px]">
                     <p className="max-w-[722px] w-full" >{`Discover unparalleled convenience and excellence in social media marketing with SMM VIP, the industry's foremost SMM panel for resellers. Our platform offers resellers a seamless experience, providing access to premium services and tools tailored to elevate your SMM ventures.`}</p>
@@ -50,6 +53,9 @@ const Empowering = () => {
                     </div>
                 </div>
             </div>
+            <Image className='absolute left-0 bottom-[0%] z-10' src={emp_layer} alt="" />
+            <Image className='absolute right-0 bottom-[0%] z-10' src={service_right_shadow} alt="" />
+            <Image className='absolute left-0 bottom-[-130%] z-10' src={emp_left_layer} alt="" />
         </div>
     )
 }

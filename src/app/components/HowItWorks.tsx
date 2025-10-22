@@ -3,10 +3,11 @@ import h1 from '../../../public/h1.png'
 import h2 from '../../../public/h2.png'
 import h3 from '../../../public/h3.png'
 import Image from 'next/image'
+import X from '../../../public/youtube.png'
 
 const HowItWorks = () => {
     return (
-        <div className='flex justify-center items-center flex-col text-center  py-[100px]'>
+        <div className='relative flex justify-center items-center flex-col text-center  py-[100px]'>
             <button className='how_ItWorks'>How Its Work</button>
             <h1 className='text-[60px] font-black mb-[150px]'>Understanding How Our Powerful SMM  <br /> System Works for You</h1>
             <div className='lg:px-[202px] flex lg:flex-row flex-col gap-[202px]'>
@@ -26,6 +27,7 @@ const HowItWorks = () => {
                     <p className='text-base font-medium'>Providing the correct links and quantities. Instantly view the total cost of your order before finalizing. After Place an order just wait few hours then you will see tha magic of SMM VIP.</p>
                 </div>
             </div>
+            <Image className='absolute left-[97px] top-[20%] z-50' src={X} alt="" />
         </div>
     )
 }

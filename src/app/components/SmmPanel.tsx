@@ -1,6 +1,8 @@
 import React from 'react'
 import smm from '../../../public/smm.png'
 import smm_bg from '../../../public/smm_bg.png'
+import layer from '../../../public/layer-2.png'
+import shadow from '../../../public/shadow-2.png'
 import X from '../../../public/X.png'
 import Image from 'next/image'
 
@@ -15,7 +17,9 @@ const SmmPanel = () => {
                 </div>
             </div>
             <Image className='absolute z-10 top-0' src={smm_bg} alt="" />
-            <Image className='absolute right-[97px] bottom-[10%]' src={X} alt="" />
+            <Image className='absolute right-[97px] bottom-[10%] z-50' src={X} alt="" />
+            <Image className='absolute right-0 bottom-[-80%]' src={layer} alt="" />
+            <Image className='absolute left-0 bottom-[-200%]' src={shadow} alt="" />
         </div>
     )
 }

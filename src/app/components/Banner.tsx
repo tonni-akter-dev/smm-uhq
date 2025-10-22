@@ -4,7 +4,7 @@ import linkdin from '../../../public/linkdin.png';
 import ghost from '../../../public/ghost.png';
 import laptop from '../../../public/laptop.png';
 import logo from '../../../public/logo.png';
-import shadow from '../../../public/shadow-1.png';
+import objectImage from '../../../public/object.png';
 import Image from 'next/image';
 import Header from './Header';
 
@@ -16,7 +16,7 @@ const Banner = () => {
             </div>
             <Header />
 
-            <main className=" z-50  lg:pr-[70px] flex justify-between relative pt-[148px] bg_vector lg:mt-[-90px] pb-[64px]">
+            <main className=" lg:pr-[70px] flex justify-between relative z-50 pt-[148px] bg_vector lg:mt-[-90px] pb-[64px]">
                 <div className='absolute top-[70px] left-[115px] z-10'>
                     <Image src={logo} alt="" />
                 </div>
@@ -39,19 +39,19 @@ const Banner = () => {
                         </button>
                     </div>
                 </div>
-                <div className=''>
+                <div>
                     <Image src={laptop} alt="" />
                 </div>
 
             </main>
+            <div className='absolute right-[3%]  z-20 bottom-[40%]'>
+                <Image src={objectImage} alt="" />
+            </div>
 
             <div className='absolute right-[39%] bottom-[92px] z-10'>
                 <Image src={ghost} alt="" />
             </div>
 
-            <div className='absolute bottom-[-10%] z-10'>
-                <Image src={shadow} alt="" />vtfg
-            </div>
 
         </div>
     );

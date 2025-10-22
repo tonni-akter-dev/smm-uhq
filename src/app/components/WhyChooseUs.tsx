@@ -4,10 +4,11 @@ import b1 from '../../../public/b1.png'
 import b2 from '../../../public/b2.png'
 import b3 from '../../../public/b3.png'
 import b4 from '../../../public/b4.png'
+import benefit from '../../../public/benefit.png'
 
 const WhyChooseUs = () => {
     return (
-        <div className='mt-[150px] flex flex-col justify-center items-center mb-[200px]'>
+        <div className='mt-[150px] relative flex flex-col justify-center items-center mb-[200px]'>
             <button className='how_ItWorks'>Why Choose Us</button>
             <h1 className='text-[60px] font-black mb-[90px]'>The Benefits of Choosing Our <br /> Advanced SMM Panel Services</h1>
             <div className='lg:px-[235px] px-4'>
@@ -42,7 +43,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
             </div>
-
+            <Image className='absolute left-0 top-[6%]' src={benefit} alt="" />
 
         </div>
     )

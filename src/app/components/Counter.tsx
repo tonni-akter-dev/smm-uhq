@@ -67,7 +67,7 @@ const Counter: React.FC = () => {
   )
 
   return (
-    <div className="lg:px-[245px] px-4 w-full mt-[60px] pb-[100px] relative">
+    <div className="lg:px-[245px] px-4 w-full mt-[60px] pb-[100px] Z-50 relative">
       <div className="flex items-center justify-center">
         <StatCard value={counters.revenue} label="In Revenue" classes="pr-[135px]" />
         <div className="border_color"></div>
