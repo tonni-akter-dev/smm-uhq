@@ -37,16 +37,16 @@ const Faq = () => {
                     >
                         <h2 className="faq_text lg:text-[48px] text-[28px] shrink-0">{faq.id}.</h2>
 
-                        <div className="flex flex-col max-w-[510px] w-full lg:h-[450px]">
-                            <div className="lg:grow">
+                        <div className="flex flex-col max-w-[510px] w-full faq_question">
+                            <div className="lg:grow faq_wrap">
                                 <h1 className="text-xl md:text-4xl lg:text-[50px] font-semibold mb-[30px]">
                                     {faq.title}
                                 </h1>
-                                <p className="text-sm md:text-lg font-medium">{faq.text}</p>
+                                <p className="text-sm md:text-lg font-medium ">{faq.text}</p>
                             </div>
-
-                            {/* Border that aligns with the text content */}
-                            <div className="gradient-border-bottom bottom_border lg:mt-[50px] w-full" />
+                            {(faq?.id === "01" || faq?.id === "02") && (
+                                <div className="gradient-border-bottom bottom_border mt-5 lg:mt-6 w-full" />
+                            )}
                         </div>
                     </div>
 

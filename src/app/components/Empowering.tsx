@@ -1,9 +1,13 @@
 import React from 'react'
+import Image from 'next/image';
 import arrow from '../../../public/arrow.png';
 import emp_layer from '../../../public/emp_layer.png';
-import service_right_shadow from '../../../public/service_right_shadow.png';
-import emp_left_layer from '../../../public/emp_left_layer.png';
-import Image from 'next/image';
+import emp_sm_shadow from '../../../public/emp_sm_shadow.png';
+import emp_left_layer from '../../../public/emp_left_layer1.png';
+import emp_left_shadow from '../../../public/emp_left_shadow.png';
+import emp_right_shadow from '../../../public/emp_right_shadow.png';
+import emp_right_layer from '../../../public/emp_right_layer.png';
+import counter_layer_right_sm from '../../../public/counter_layer_right_sm.png'
 
 const Empowering = () => {
     return (
@@ -42,12 +46,12 @@ const Empowering = () => {
                             <Image src={arrow} alt="" />
                         </div>
                     </div>
-                    <div className="space-x-4 absolute bottom-[20%] md:bottom-[248px]">
+                    <div className="space-x-4 absolute bottom-[20%] md:bottom-[248px] emp_btn_pos">
                         <div className='emp_buttons'>
                             <button className="emp_btn1_bg text-white text-xl font-semibold">
                                 Create Account
                             </button>
-                            <button className="emp_btn1_bg1 text-white">
+                            <button className="emp_btn1_bg1 text-white text-xl font-semibold">
                                 Get Discounts
                             </button>
                         </div>
@@ -55,8 +59,22 @@ const Empowering = () => {
                 </div>
             </div>
             <Image className='absolute left-0 bottom-[0%] z-10' src={emp_layer} alt="" />
-            <Image className='lg:block hidden absolute right-0 bottom-[0%] z-10' src={service_right_shadow} alt="" />
-            <Image className='lg:block hidden  absolute left-0 bottom-[-130%] z-10' src={emp_left_layer} alt="" />
+            {/* left layer imag */}
+            <Image className='lg:block hidden opacity-[0.3] absolute left-[-26%] bottom-[-36%] z-10' src={emp_left_layer} alt="" />
+
+            <Image className='lg:block hidden absolute left-0 
+            -bottom-full z-10' src={emp_left_shadow} alt="" />
+            {/* left layer imag */}
+            {/* left right imag */}
+            <Image className='lg:block hidden absolute right-0 
+            bottom-[-40%] z-10' src={emp_right_shadow} alt="" />
+            <Image className='lg:block hidden opacity-[0.3] absolute right-[-0%] bottom-[-20%] z-10' src={emp_right_layer} alt="" />
+            {/* left right imag */}
+
+
+            <Image className="lg:hidden block absolute bottom-[46%] md:bottom-[0%] right-0 z-10" src={counter_layer_right_sm} alt="Facebook logo" />
+            <Image className="lg:hidden block absolute bottom-[-19%] left-0 z-10" src={emp_sm_shadow} alt="Facebook logo" />
+
         </div>
     )
 }

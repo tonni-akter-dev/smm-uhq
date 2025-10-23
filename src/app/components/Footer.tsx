@@ -9,19 +9,21 @@ import twitter from '../../../public/twiter.png'
 import footer_left from '../../../public/footer_left_layer.png'
 import footer_right from '../../../public/footer_right_layer.png'
 import footer_sm_logo from '../../../public/footer_sm_logo.png'
+import footer_sm_shadow from '../../../public/footer_sm_shadow.png'
+import footer_sm_bottom from '../../../public/footer_sm_bottom.png'
 
 const Footer = () => {
   return (
-    <div className='relative lg:px-[105px] px-4 pb-[35px] lg:pb-[100px] lg:pt-[150px] '>
+    <div className='footer relative lg:px-[105px] px-4 pb-[35px] lg:pb-[100px] lg:pt-[150px] '>
       <div className='relative z-999999999 footer_bg flex lg:flex-row flex-col lg:pt-[137px] lg:pl-[94px]'>
-        <div className='max-w-[600px] w-full lg:mb-0 mb-[60px]'>
+        <div className='max-w-[600px] w-full lg:mb-0 mb-[60px] footer_first_section'>
           <Image className='footer_logo md:block hidden' src={logo} alt="" />
           <Image className='md:hidden block footer_logo' src={footer_sm_logo} alt="" />
           <p className='text-xl text-white '>Built for Digital Growth.</p>
-     
+
         </div>
 
-        <div className='lg:mr-[182px] lg:mb-0 mb-8'>
+        <div className='lg:mr-[182px] lg:mb-0 mb-8 second_sec'>
           <h4 className='text-[22px] text-[#FEFFFF] font-medium mb-2.5'>Quick Links</h4>
           <ul className='flex flex-col gap-1'>
             <li>
@@ -45,7 +47,7 @@ const Footer = () => {
 
           </ul>
         </div>
-        <div className='lg:mr-[130px] lg:mb-0 mb-8'>
+        <div className='lg:mr-[130px] lg:mb-0 mb-8 second_sec'>
           <h4 className='text-[22px] text-[#FEFFFF] font-medium mb-2.5'>Important Policies</h4>
           <ul className='flex flex-col gap-1'>
             <li>
@@ -62,14 +64,13 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
         <div>
           <h4 className='text-[22px] text-[#FEFFFF] font-medium mb-2.5'>Connect With Us</h4>
           <div>
-            <p className='text-[#B1B1B1] text-base leading-[167%] ' >Phone : +123 456 789</p>
-            <p className='text-[#B1B1B1] text-base leading-[167%] ' >Email   : @example.com</p>
+            <p className='text-[#B1B1B1] text-base leading-[167%] footr_p ' >Phone : +123 456 789</p>
+            <p className='text-[#B1B1B1] text-base leading-[167%] footr_p ' >Email   : @example.com</p>
           </div>
-          <div className='flex gap-5 mt-7'>
+          <div className='flex gap-5 mt-7 icons'>
             <Link href={`#`}><Image src={fb} alt="" /></Link>
             <Link href={`#`}><Image src={linkd} alt="" /></Link>
             <Link href={`#`}><Image src={twitter} alt="" /></Link>
@@ -79,8 +80,10 @@ const Footer = () => {
       </div>
 
       <div className='flex justify-end lg:mt-[-40px] mr-[66px]'>
-        <p className='text-white font-medium  lg:mt-0 mt-5 text-base'>Copyright ©2025 SMM Account. All right reserved</p>
+        <p className='text-white font-medium  lg:mt-0 mt-5 text-base copyright'>Copyright ©2025 SMM Account. All right reserved</p>
       </div>
+      <Image className='absolute right-0 top-0 z-10 lg:hidden block' src={footer_sm_shadow} alt="" />
+      <Image className='absolute left-0 bottom-0 z-10 lg:hidden block' src={footer_sm_bottom} alt="" />
       <Image className='absolute left-0 bottom-0 z-10 lg:block hidden' src={footer_left} alt="" />
       <Image className='absolute right-[0%] bottom-0 z-10 lg:block hidden' src={footer_right} alt="" />
     </div>

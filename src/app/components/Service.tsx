@@ -10,6 +10,7 @@ import Link from 'next/link';
 import yt from '../../../public/youtube.png'
 import ball from '../../../public/ball.png'
 import faq_layer from '../../../public/faq_layer.png';
+import faq_shadow from '../../../public/faq_shadow.png';
 
 const Service = () => {
   return (
@@ -46,7 +47,8 @@ const Service = () => {
       </div>
       <Image className='absolute yt_size right-7 top-[-7%] md:top-[20%]' src={yt} alt="" />
 
-      <Image className='absolute top-0 right-0 lg:block hidden' src={faq_layer} alt="" />
+      <Image className='absolute top-[63%] opacity-[0.3] right-0 lg:block hidden' src={faq_layer} alt="" />
+      <Image className='absolute top-0 right-0 lg:block hidden' src={faq_shadow} alt="" />
     </div>
   )
 }

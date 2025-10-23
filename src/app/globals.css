@@ -62,6 +62,23 @@ button {
   margin-top: 10px;
 }
 
+.emp_btn1_bg {
+  background-image: url('/button_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75px;
+  width: 250px;
+}
+
+.emp_btn1_bg1 {
+  background-image: url('/buttho.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 69px;
+  width: 250px;
+  margin-top: 10px;
+}
+
 .border_color {
   background: linear-gradient(354.17deg, #7129FF 3.91%, #BD00FD 72.59%);
   height: 188px;
@@ -152,7 +169,6 @@ button {
   border-image-source: linear-gradient(354.17deg, #7129FF 3.91%, #BD00FD 72.59%);
   border-image-slice: 1;
   border-image-width: 0 0 1px 0;
-  padding-bottom: 28px;
 }
 
 .active-link {
@@ -165,12 +181,16 @@ button {
 
 .register_btn {
   box-shadow: 0px 2px 10px 0px #FF07EE99;
-  background: linear-gradient(354.17deg, #7129FF 3.91%, #FD00E3 72.59%);
+  background: linear-gradient(354.17deg, #8e73c5 3.91%, #be5fb5 72.59%);
   border-radius: 25px;
   padding: 25px 85px;
   font-size: 20px;
   font-weight: 600;
+}
 
+.sm_menu_bg {
+  box-shadow: 0px 2px 10px 0px #FF07EE99;
+  background: linear-gradient(354.17deg, #7129FF 3.91%, #FD00E3 72.59%);
 }
 
 .banner_header {
@@ -179,16 +199,71 @@ button {
   padding-left: 125px;
 }
 
+/* 
+.emp_btn1_bg {
+    background-image: url('/emp_btn_bg.png');
+    width: 145px !important;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .emp_btn1_bg1 {
+    background-image: url('/emp_btn_bg1.png');
+    width: 145px !important;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+  } */
+
+.emp_buttons {
+  display: flex;
+  gap: 20px;
+}
+
+
 /* responsive */
 @media (min-width:320px) and (max-width: 431px) {
+  .footer_first_section {
+    margin-bottom: 40px;
+  }
+
+  .emp_btn_pos {
+    bottom: 10%;
+  }
+
+  .footer h4 {
+    font-size: 16px;
+  }
+
+  .second_sec a {
+    font-size: 12px;
+  }
+
+  .footr_p {
+    font-size: 12px;
+  }
+
+  /* .footer .icons {
+    height: 34px;
+    width: 34px;
+  } */
 
   .footer_bg {
     background-image: url('/footer_sm_bg.png');
-    height: 871px;
+    height: 773px;
     width: 100%;
-    padding-top: 73px;
+    padding-top: 40px;
     padding-left: 34px;
-    background-size: cover;
+    background-size: contain;
+  }
+
+  .copyright {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 77%;
+    right: -17%;
+    font-size: 10px;
   }
 
   .faq_wrapper {
@@ -444,8 +519,8 @@ button {
   }
 
   .ghost {
-    bottom: 62%;
-    right: 17px;
+    bottom: 55%;
+    right: 15px;
   }
 
   /* smm panel */
@@ -483,13 +558,45 @@ button {
   .emp_gap {
     gap: 50px;
   }
-     .service_wrapper .icons {
+
+  .service_wrapper .icons {
     gap: 71px;
     margin-bottom: 50px;
   }
 }
 
 @media (min-width:431px) and (max-width: 768px) {
+  .emp_btn1_bg {
+    background-image: url('/emp_btn_bg.png');
+    width: 145px !important;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .emp_btn_pos {
+    bottom: 140px;
+  }
+
+  .emp_list {
+    width: 200px;
+  }
+
+  .emp_text_p {
+    max-width: 420px !important;
+  }
+
+  .emp_list h6 {
+    font-size: 18px;
+  }
+
+  .emp_btn1_bg1 {
+    background-image: url('/emp_btn_bg1.png');
+    width: 145px !important;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+  }
 
   /* empowering */
   .empowering_wrapper {
@@ -602,6 +709,28 @@ button {
     margin-top: 0;
   }
 
+  .emp_bg {
+    height: 100%;
+  }
+
+  .emp_gap {
+    gap: 20px;
+  }
+
+  .emp_bg {
+
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .emp_bg .heading {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .emp_bg p {
+    font-size: 14px;
+  }
 }
 
 @media (min-width:769px) and (max-width: 1024px) {
@@ -714,7 +843,7 @@ button {
   }
 
   .counter {
-    width: fit-content;
+    width: 100%;
   }
 
   .border_color {
@@ -794,6 +923,33 @@ button {
 }
 
 @media (min-width:1025px) and (max-width: 1440px) {
+  .footer_first_section {
+    max-width: 400px;
+  }
+
+  .footer_bg {
+    height: 300px;
+    background-size: cover;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .second_sec {
+    margin-right: 60px;
+  }
+
+  .faq_number {
+    margin-bottom: 0;
+  }
+
+  .faq_wrap {
+    height: 400px;
+  }
+
+  .faq_wrap h1 {
+    font-size: 30px;
+  }
+
   .faq_item h1 {
     font-size: 40px;
   }
@@ -987,16 +1143,28 @@ button {
 
   /* counter */
   .counter_2 {
-    padding-left: 120px !important;
-    padding-right: 120px !important;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
   }
 
   .counter_1 {
-    padding-right: 120px !important;
+    padding-right: 80px !important;
   }
 
   .counter_3 {
-    padding-left: 120px !important;
+    padding-left: 80px !important;
+  }
+
+  .faq_grid {
+    gap: 100px !important;
+  }
+
+  .faq_wrap h1 {
+    font-size: 40px;
+  }
+
+  .faq_number {
+    margin-bottom: 80px;
   }
 
   .counter_h3 {
@@ -1005,6 +1173,10 @@ button {
 
   .counter {
     width: fit-content;
+  }
+
+  .faq_wrap {
+    height: 387px;
   }
 
   .border_color {
@@ -1049,11 +1221,26 @@ button {
   .header_wrap {
     padding-left: 120px;
   }
+
+  /* footer */
+  .footer_first_section {
+    max-width: 400px;
+  }
+
+  .second_sec {
+    margin-right: 100px;
+  }
+
+  /* footer */
 }
 
 @media (min-width:1601px) and (max-width: 1920px) {
   .smm_bg {
     width: 80%;
+  }
+
+  .faq_wrap {
+    height: 350px;
   }
 
   .bg_vector {

@@ -79,7 +79,7 @@ const Counter: React.FC = () => {
       </div>
       <Image className="lg:block hidden absolute bottom-0 left-[25%]" src={facebook} alt="Facebook logo" />
 
-      <Image className="lg:hidden block absolute bottom-[-64%] left-0 z-10" src={counter_layer_sm} alt="Facebook logo" />
+      <Image className="lg:hidden block absolute bot  tom-[-64%] left-0 z-10" src={counter_layer_sm} alt="Facebook logo" />
       <Image className="lg:hidden block absolute bottom-[-64%] right-0 z-10" src={counter_layer_right_sm} alt="Facebook logo" />
 
     </div>

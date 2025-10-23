@@ -26,12 +26,12 @@ const Header = () => {
             </button>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-white lg:hidden block_clss"
+                className="text-white lg:hidden block_clss border border-[#FFFFFF26] rounded-full px-3 py-3.5"
             >
                 {isOpen ? <IoClose /> : <GiHamburgerMenu />}
             </button>
             {isOpen && (
-                <div className="absolute top-[70px] left-0 w-full block_clss bg-black flex flex-col items-center py-6 space-y-6 lg:hidden">
+                <div className="absolute top-[70px] left-0 w-full block_clss sm_menu_bg flex  flex-col items-center py-6 space-y-6 lg:hidden">
                     <Link href="#" onClick={() => setIsOpen(false)} className={`text-white text-xl ${pathname == '/' ? 'active-link' : ''}`}>Home</Link>
                     <Link href="#" onClick={() => setIsOpen(false)} className="text-white text-xl">About Us</Link>
                     <Link href="#" onClick={() => setIsOpen(false)} className="text-white text-xl">Services</Link>
