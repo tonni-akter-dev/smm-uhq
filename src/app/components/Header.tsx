@@ -16,9 +16,9 @@ const Header = () => {
 
             <nav className="header_wrap hidden_clss hidden lg:flex space-x-[55px]">
                 <Link href="#" className={`text-white text-xl ${pathname == '/' ? "active-link" : ""}`}>Home</Link>
-                <Link href="#" className="text-white text-xl">About Us</Link>
-                <Link href="#" className="text-white text-xl">Services</Link>
-                <Link href="#" className="text-white text-xl">Contact Us</Link>
+                <Link href="#" className={`text-white text-xl ${pathname == '/about' ? "active-link" : ""}`}>About Us</Link>
+                <Link href="#" className={`text-white text-xl ${pathname == '/services' ? "active-link" : ""}`}>Services</Link>
+                <Link href="#" className={`text-white text-xl ${pathname == '/contact' ? "active-link" : ""}`}>Contact Us</Link>
             </nav>
 
             <button className="hidden_clss lg:flex hidden register_btn text-white font-bold py-2 px-4 rounded-full">

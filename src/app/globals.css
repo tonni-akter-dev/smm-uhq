@@ -172,11 +172,26 @@ button {
 }
 
 .active-link {
-  background-image: url('/active_nav_bg.png');
+  position: relative;
+}
+
+.active-link:before {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: -53px;
+  /* adjust where you want */
+  width: 164px;
+  height: 148px;
+  /* required */
+  background-image: url('/active_nav_bg.png ');
   background-repeat: no-repeat;
   background-size: contain;
+  /* cover if you want full background */
   background-position: center;
-
+  pointer-events: none;
+  z-index: -1;
+  /* or 1 depending on layering */
 }
 
 .register_btn {
