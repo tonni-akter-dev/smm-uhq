@@ -26,7 +26,7 @@ const Header = () => {
             </button>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-white lg:hidden block_clss border border-[#FFFFFF26] rounded-full px-3 py-3.5"
+                className="text-white lg:hidden block_clss border border-[#FFFFFF26] rounded-full p-3"
             >
                 {isOpen ? <IoClose /> : <GiHamburgerMenu />}
             </button>

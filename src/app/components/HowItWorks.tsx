@@ -8,7 +8,7 @@ import X from '../../../public/youtube.png'
 const HowItWorks = () => {
     return (
         <div className='howItworks relative flex justify-center items-center flex-col text-center  py-[100px]'>
-            <button className='how_ItWorks'>How Its Work</button>
+            <div className='how_ItWorks'>How Its Work</div>
             <h1 className='heading text-[60px] font-black mb-[55px] lg:mb-[150px]'>Understanding How Our Powerful SMM  <br /> System Works for You</h1>
             <div className='lg:px-[202px] how_cards flex lg:flex-row flex-col gap-11 lg:gap-[202px]'>
                 <div className='flex flex-col items-center text-center'>

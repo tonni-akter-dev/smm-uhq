@@ -32,7 +32,7 @@ const Service = () => {
           </div>
         </div>
 
-        <Image className='absolute left-[130px] bottom-[20%]' src={ball} alt="" />
+        <Image className='absolute left-[130px] bottom-[20%] lg:block hidden' src={ball} alt="" />
         <div className='max-w-[590px] w-full'>
           <button className='how_ItWorks mb-10'>OUR Services</button>
           <h1 className='heading text-[60px] font-medium capitalize mb-7'>Explore Our Most <br /> Popular SMM Tools</h1>
@@ -41,7 +41,7 @@ const Service = () => {
             <button className="btn_bg1  text-white">
               See All Our Services
             </button>
-            <Image className='absolute  lg:block hidden right-[130px] bottom-[10%]' src={ball} alt="" />
+            <Image className='absolute  lg:block hidden right-[130px] bottom-[10%] ' src={ball} alt="" />
           </div>
         </div>
       </div>

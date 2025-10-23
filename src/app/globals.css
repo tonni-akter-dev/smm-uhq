@@ -87,19 +87,22 @@ button {
 
 .how_ItWorks {
   position: relative;
+  padding: 13px 24px;
   background: linear-gradient(90.32deg, #AC82FF -8.31%, #FFFFFF 148%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   font-family: "DM Sans", sans-serif;
-  padding: 13px 24px;
   margin-bottom: 28px;
   background-color: transparent;
   border-radius: 50px;
   border: none;
   z-index: 1;
   width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .how_ItWorks::before {
@@ -109,7 +112,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90.32deg, #AC82FF -8.31%, #FFFFFF 148%);
+  background: linear-gradient(354.17deg, #7129FF 3.91%, #BD00FD 72.59%);
   border-radius: inherit;
   z-index: -1;
   padding: 2px;
@@ -120,6 +123,13 @@ button {
 
 .benefit_card {
   background-image: url('/benefits_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.benefit_card:hover {
+  background-image: url('/choose_hover.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -196,8 +206,9 @@ button {
 
 .register_btn {
   box-shadow: 0px 2px 10px 0px #FF07EE99;
-  background: linear-gradient(354.17deg, #8e73c5 3.91%, #be5fb5 72.59%);
   border-radius: 25px;
+  background: linear-gradient(354.17deg, #7129FF 3.91%, #FD00E3 72.59%);
+
   padding: 25px 85px;
   font-size: 20px;
   font-weight: 600;
@@ -205,7 +216,7 @@ button {
 
 .sm_menu_bg {
   box-shadow: 0px 2px 10px 0px #FF07EE99;
-  background: linear-gradient(354.17deg, #7129FF 3.91%, #FD00E3 72.59%);
+  background: linear-gradient(354.17deg, #221142 3.91%, #120311 72.59%);
 }
 
 .banner_header {
@@ -213,9 +224,153 @@ button {
   font-weight: 900;
   padding-left: 125px;
 }
+.emp_buttons {
+  display: flex;
+  gap: 20px;
+}
 
-/* 
-.emp_btn1_bg {
+@media (min-width: 320px) and (max-width: 380px) {
+  .register_btn {
+    border-radius: 14px;
+    padding: 11px 85px;
+  }
+
+  .banner_header {
+    padding-left: 25px;
+    line-height: 126%;
+    font-size: 28px !important;
+  }
+
+  .footer_first_section {
+    margin-bottom: 10px;
+  }
+
+  .emp_btn_pos {
+    bottom: 10%;
+  }
+
+  .footer h4 {
+    font-size: 16px;
+  }
+
+  .second_sec {
+    margin-bottom: 24px;
+  }
+
+  .second_sec a {
+    font-size: 12px;
+  }
+
+  .footr_p {
+    font-size: 12px;
+  }
+
+  /* .footer .icons {
+    height: 34px;
+    width: 34px;
+  } */
+
+  .footer_bg {
+    background-image: url('/footer_sm_bg.png');
+    height: 773px;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 34px;
+    background-size: contain;
+  }
+
+  .copyright {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 77%;
+    right: -17%;
+    font-size: 10px;
+  }
+
+  .faq_wrapper {
+    margin-top: 90px;
+  }
+
+  .faq_text {
+    font-size: 28px;
+  }
+
+  .service_bg {
+    width: 100%;
+    background-size: contain;
+    padding-left: 50px;
+    height: 285px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .service_icons {
+    padding-top: 50px !important;
+  }
+
+  .service_bg .platform {
+    padding-top: 10px;
+  }
+
+  .faq_number {
+    gap: 10px;
+  }
+
+  /* service */
+  .how_ItWorks {
+    padding: 6.5px 24px;
+    font-size: 10px;
+  }
+
+  .service_wrapper {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .service_wrapper .icons {
+    gap: 30px;
+  }
+
+  .service_gap {
+    gap: 75px;
+    flex-direction: column-reverse;
+  }
+
+  .service_bg {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .service_mt {
+    margin-top: 40px;
+  }
+
+
+  .yt_size {
+    width: 31px;
+    height: 22px;
+  }
+
+  .empowering_wrapper {
+    margin-bottom: 44px;
+  }
+
+  /* service */
+  .emp_bg {
+    background-image: url('/emp_sm_bg.png');
+    background-size: cover;
+    height: fit-content;
+  }
+
+  .emp_list_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin-right: 20px;
+  }
+
+  .emp_btn1_bg {
     background-image: url('/emp_btn_bg.png');
     width: 145px !important;
     height: 40px;
@@ -229,16 +384,216 @@ button {
     height: 40px;
     font-size: 12px;
     font-weight: 600;
-  } */
+  }
 
-.emp_buttons {
-  display: flex;
-  gap: 20px;
+  .emp_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .grad_box {
+    width: 7px;
+    height: 7px;
+  }
+
+  /* empowering */
+  .emp_list {
+    width: 106px;
+    margin-bottom: 32px;
+  }
+
+  .emp_list h6 {
+    font-size: 11.05px;
+    line-height: 12.89px;
+  }
+
+  .emp_list img {
+    width: 16px;
+    height: 16px;
+
+  }
+
+  .empowering_wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .emp_text_p {
+    font-size: 14px;
+    line-height: 19px;
+    padding-right: 16px;
+  }
+
+  /* empowering */
+
+
+  /* how it works */
+  .how_cards {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  .howItworks h3 {
+    font-size: 18px;
+  }
+
+  .howItworks p {
+    font-size: 14px;
+  }
+
+  /* how it works */
+
+
+  .counter_2 {
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+
+  .banner_px {
+    padding-bottom: 0;
+  }
+
+  .counter_1 {
+    padding-right: 20px;
+  }
+
+  .smm_header h1 {
+    font-size: 20px;
+  }
+
+  .counter_3 {
+    padding-left: 25px;
+  }
+
+  /* counter */
+  .border_color {
+    height: 60px;
+  }
+
+  /* counter */
+
+  /* banner */
+  .bg_vector {
+    background-image: url('/mobile_banner_bg.png') !important;
+    background-size: contain;
+  }
+
+  .banner_logo {
+    top: 40px;
+    left: 28px;
+  }
+
+  .banner_text_wrap {
+    padding-top: 80px !important;
+    margin-bottom: 30px;
+  }
+
+  .banner_header {
+    font-size: 35px;
+    padding-left: 25px;
+    line-height: 126%;
+  }
+
+  .banner_p p {
+    padding-left: 14px;
+  }
+
+  .btn_bg {
+    background-image: url('/button_bg1.png');
+    background-size: cover;
+    height: 52px;
+    width: 255px;
+  }
+
+  .btn_bg1 {
+    background-image: url('/button_bg2.png');
+    background-size: contain;
+    height: 45px;
+    width: 255px;
+  }
+
+  .emp_btn_bg {
+    background-image: url('/button_bg1.png');
+    background-size: cover;
+    height: 52px;
+    width: 271px;
+  }
+
+  .emp_btn_bg1 {
+    background-image: url('/button_bg2.png');
+    background-size: cover;
+    height: 45px;
+    width: 271px;
+  }
+
+  .laptop_img {
+    margin-top: -52px;
+  }
+
+  .banner_btn {
+    padding-left: 24px;
+    padding-top: 35px;
+  }
+
+  .banner {
+    padding-top: 0;
+  }
+
+  .ghost {
+    bottom: 55%;
+    right: 15px;
+  }
+
+  /* smm panel */
+  .smm_bg {
+    width: 90% !important;
+    left: 5% !important;
+  }
+
+  .smm_header p {
+    line-height: 22px;
+    font-size: 12px;
+    margin-top: 13px !important;
+  }
+
+  .smm_panel_wrapper {
+    padding-top: 90px;
+  }
+
+  .x_img {
+    right: 52px;
+    top: 48px;
+    width: 25px;
+    height: 22px;
+  }
+
+  .smm_header {
+    margin-left: 20px;
+  }
+
+  .smm_img {
+    width: 321px;
+    margin-top: 42px;
+    margin-right: 44px;
+  }
+
+  .emp_gap {
+    gap: 50px;
+  }
+
+  .service_wrapper .icons {
+    gap: 71px;
+    margin-bottom: 32px;
+  }
 }
 
-
 /* responsive */
-@media (min-width:320px) and (max-width: 431px) {
+@media (min-width:381px) and (max-width: 431px) {
   .footer_first_section {
     margin-bottom: 40px;
   }
@@ -299,7 +654,7 @@ button {
   }
 
   .service_icons {
-    padding-top: 50px !important;
+    padding-top: 30px !important;
   }
 
   .service_bg .platform {
@@ -470,6 +825,7 @@ button {
   /* banner */
   .bg_vector {
     background-image: url('/mobile_banner_bg.png') !important;
+    background-size: contain;
   }
 
   .banner_logo {
@@ -483,7 +839,7 @@ button {
   }
 
   .banner_header {
-    font-size: 35px !important;
+    font-size: 35px;
     padding-left: 25px;
     line-height: 126%;
   }

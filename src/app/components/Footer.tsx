@@ -79,13 +79,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-end lg:mt-[-40px] mr-[66px]'>
-        <p className='text-white font-medium  lg:mt-0 mt-5 text-base copyright'>Copyright ©2025 SMM Account. All right reserved</p>
+      <div className='flex justify-end lg:-mt-10 text-white mr-[66px] z-50 relative' >
+        <p className='text-white! font-medium  lg:mt-0 mt-5 text-base copyright '>Copyright ©2025 SMM Account. All right reserved</p>
       </div>
       <Image className='absolute right-0 top-0 z-10 lg:hidden block' src={footer_sm_shadow} alt="" />
       <Image className='absolute left-0 bottom-0 z-10 lg:hidden block' src={footer_sm_bottom} alt="" />
-      <Image className='absolute left-0 bottom-0 z-10 lg:block hidden' src={footer_left} alt="" />
-      <Image className='absolute right-[0%] bottom-0 z-10 lg:block hidden' src={footer_right} alt="" />
+      <Image className='absolute left-0 bottom-0 lg:block hidden z-10' src={footer_left} alt="" />
+      <Image className='absolute right-[0%] bottom-0  lg:block hidden z-10' src={footer_right} alt="" />
     </div>
   )
 }

@@ -13,7 +13,7 @@ import why_pink1 from '../../../public/why_pink1.png'
 const WhyChooseUs = () => {
     return (
         <div className='lg:mt-[150px] relative flex flex-col justify-center items-center lg:mb-[200px]'>
-            <button className='how_ItWorks'>Why Choose Us</button>
+            <div className='how_ItWorks'>Why Choose Us</div>
             <h1 className='heading lg:text-start text-center text-[60px] font-black mb-[55px] lg:mb-[90px]'>The Benefits of Choosing <br className='lg:hidden block' /> Our <br className='lg:block hidden' /> Advanced SMM Panel Services</h1>
             <div className='whychoose lg:px-[235px] px-4 relative z-50'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[46px] benefit_wrapper'>
