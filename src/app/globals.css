@@ -7,6 +7,44 @@ body {
   background-color: #11111B;
 }
 
+input {
+  color: #757575;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+}
+
+input:focus {
+  border: 1px solid transparent;
+  border-image-source: linear-gradient(354.17deg, #7129FF 3.91%, #FD00E3 72.59%);
+  border-image-slice: 1;
+  box-shadow: 0px 0px 4px 2px #CC00FF;
+  outline: none;
+  background-color: #191918;
+}
+
+.submit_btn {}
+
+textarea {
+  color: #757575;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  height: 225px;
+}
+
+textarea:focus {
+  border: 1px solid transparent;
+  border-image-source: linear-gradient(354.17deg, #7129FF 3.91%, #FD00E3 72.59%);
+  border-image-slice: 1;
+  box-shadow: 0px 0px 4px 2px #CC00FF;
+  outline: none;
+  background-color: #191918;
+}
+
+label {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
 
 h1,
 h2,
@@ -183,25 +221,24 @@ button {
 
 .active-link {
   position: relative;
+  display: inline-block;
+  /* ensures it fits text width */
 }
 
-.active-link:before {
+.active-link::before {
   content: "";
   position: absolute;
-  bottom: -19px;
-  left: -53px;
-  /* adjust where you want */
+  top: -72%;
+  left: 50%;
   width: 164px;
   height: 148px;
-  /* required */
-  background-image: url('/active_nav_bg.png ');
+  background-image: url('/active_nav_bg.png');
   background-repeat: no-repeat;
   background-size: contain;
-  /* cover if you want full background */
   background-position: center;
   pointer-events: none;
   z-index: -1;
-  /* or 1 depending on layering */
+  transform: translate(-50%, -50%);
 }
 
 .register_btn {
@@ -224,6 +261,7 @@ button {
   font-weight: 900;
   padding-left: 125px;
 }
+
 .emp_buttons {
   display: flex;
   gap: 20px;
@@ -265,14 +303,9 @@ button {
     font-size: 12px;
   }
 
-  /* .footer .icons {
-    height: 34px;
-    width: 34px;
-  } */
-
   .footer_bg {
     background-image: url('/footer_sm_bg.png');
-    height: 773px;
+    height: 685px;
     width: 100%;
     padding-top: 40px;
     padding-left: 34px;
@@ -280,11 +313,11 @@ button {
   }
 
   .copyright {
+    font-size: 8px;
     position: absolute;
-    transform: rotate(90deg);
-    top: 77%;
+    top: 76%;
     right: -17%;
-    font-size: 10px;
+    transform: rotate(270deg);
   }
 
   .faq_wrapper {
@@ -384,6 +417,7 @@ button {
     height: 40px;
     font-size: 12px;
     font-weight: 600;
+    margin-top: 0;
   }
 
   .emp_buttons {
@@ -495,12 +529,12 @@ button {
 
   .banner_header {
     font-size: 35px;
-    padding-left: 25px;
+    padding-left: 10px;
     line-height: 126%;
   }
 
   .banner_p p {
-    padding-left: 14px;
+    padding-left: 0px !important;
   }
 
   .btn_bg {
@@ -630,7 +664,7 @@ button {
 
   .copyright {
     position: absolute;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     top: 77%;
     right: -17%;
     font-size: 10px;
@@ -733,6 +767,10 @@ button {
     height: 40px;
     font-size: 12px;
     font-weight: 600;
+  }
+
+  .about .about_emp_btn {
+    flex-direction: row !important;
   }
 
   .emp_buttons {
@@ -933,6 +971,10 @@ button {
   .service_wrapper .icons {
     gap: 71px;
     margin-bottom: 50px;
+  }
+
+  .about_emp_btn {
+    flex-direction: row !important;
   }
 }
 
@@ -1438,7 +1480,7 @@ button {
   }
 
   .header_wrap {
-    padding-left: 120px;
+    padding-left: 252px;
   }
 
   /* smm panel */
@@ -1603,6 +1645,10 @@ button {
   }
 
   /* footer */
+
+  .about_section {
+    gap: 40px !important;
+  }
 }
 
 @media (min-width:1601px) and (max-width: 1920px) {
@@ -1626,4 +1672,14 @@ button {
 
 .bg_vector {
   background-repeat: no-repeat;
+}
+
+
+
+.service_card {
+  backdrop-filter: blur(15px);
+  border: 0.85px solid transparent;
+  border-image: linear-gradient(113.18deg, rgba(255, 255, 255, 0.5) -5.09%, rgba(255, 255, 255, 0) 55.69%);
+  border-image-slice: 1;
+  background-color: #FFFFFF0D;
 }

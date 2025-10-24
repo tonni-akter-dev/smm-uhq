@@ -20,28 +20,28 @@ const Empowering = () => {
                         <div className='flex items-center justify-between emp_list mb-[70px] w-[300px]'>
                             <div className='flex items-start gap-2.5 md:gap-5'>
                                 <div className='grad_box'></div>
-                                <h6 className='text-[24px] font-semibold leading-[28px]'>Premium <br /> Services</h6>
+                                <h6 className='text-[24px] font-semibold leading-7'>Premium <br /> Services</h6>
                             </div>
                             <Image src={arrow} alt="" />
                         </div>
                         <div className='flex items-center justify-between emp_list mb-[70px] w-[300px]'>
                             <div className='flex items-start gap-2.5 md:gap-5'>
                                 <div className='grad_box'></div>
-                                <h6 className='text-[24px] font-semibold leading-[28px]'>Seamless  <br /> Integration</h6>
+                                <h6 className='text-[24px] font-semibold leading-7'>Seamless  <br /> Integration</h6>
                             </div>
                             <Image src={arrow} alt="" />
                         </div>
                         <div className='flex items-center justify-between emp_list mb-[70px] w-[300px]'>
                             <div className='flex items-start gap-2.5 md:gap-5'>
                                 <div className='grad_box'></div>
-                                <h6 className='text-[24px] font-semibold leading-[28px]'>Real-Time  <br /> Analytics</h6>
+                                <h6 className='text-[24px] font-semibold leading-7'>Real-Time  <br /> Analytics</h6>
                             </div>
                             <Image src={arrow} alt="" />
                         </div>
                         <div className='flex items-center justify-between emp_list mb-[70px] w-[300px]'>
                             <div className='flex items-start gap-2.5 md:gap-5'>
                                 <div className='grad_box'></div>
-                                <h6 className='text-[24px] font-semibold leading-[28px]'>24/7 Support</h6>
+                                <h6 className='text-[24px] font-semibold leading-7'>24/7 Support</h6>
                             </div>
                             <Image src={arrow} alt="" />
                         </div>

@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-end lg:-mt-10 text-white mr-[66px] z-50 relative' >
+      <div className='flex justify-end lg:-mt-10 text-white mr-[66px] z-50 lg:relative' >
         <p className='text-white! font-medium  lg:mt-0 mt-5 text-base copyright '>Copyright ©2025 SMM Account. All right reserved</p>
       </div>
       <Image className='absolute right-0 top-0 z-10 lg:hidden block' src={footer_sm_shadow} alt="" />
