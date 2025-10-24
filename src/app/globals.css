@@ -305,11 +305,11 @@ button {
 
   .footer_bg {
     background-image: url('/footer_sm_bg.png');
-    height: 685px;
-    width: 100%;
-    padding-top: 40px;
-    padding-left: 34px;
     background-size: contain;
+    width: 101%;
+    height: 676px;
+    padding-top: 30px;
+    padding-left: 34px;
   }
 
   .copyright {
@@ -632,6 +632,12 @@ button {
 
 /* responsive */
 @media (min-width:381px) and (max-width: 431px) {
+
+  .register_btn {
+    border-radius: 14px;
+    padding: 11px 85px;
+  }
+
   .footer_first_section {
     margin-bottom: 40px;
   }

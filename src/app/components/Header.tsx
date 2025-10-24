@@ -11,7 +11,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className="w-full py-4 px-6 flex justify-between items-center relative z-9999999">
+        <header className="w-full py-4 lg:px-6 flex justify-between items-center relative z-9999999">
             <div className="text-2xl font-bold text-purple-400"></div>
 
             <nav className="header_wrap hidden_clss hidden lg:flex space-x-[55px]">
