@@ -6,9 +6,10 @@ import Footer from '../components/Footer'
 
 const Services = () => {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <ServiceBanner />
             <ServiceCard />
+
             <Service />
             <Footer />
         </div>

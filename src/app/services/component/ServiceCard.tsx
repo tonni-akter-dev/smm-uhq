@@ -6,6 +6,8 @@ import service4 from '../../../../public/service4.png'
 import service5 from '../../../../public/service5.png'
 import service6 from '../../../../public/service6.png'
 import Image, { StaticImageData } from 'next/image'
+import shadow3 from '../../../../public/shadow3.png';
+import layer3 from '../../../../public/layer3.png';
 
 interface Service {
     id: number;
@@ -55,8 +57,8 @@ const ServiceCard = () => {
     ];
 
     return (
-        <div className='mt-[105px] max-w-[1282px] w-full mx-auto px-4 sm:px-6 lg:px-8 mb-[140px]'>
-            <div className='text-center mb-12 lg:mb-16'>
+        <div className='relative mt-[105px] max-w-[1282px] w-full mx-auto px-4 sm:px-6 lg:px-8 mb-[140px]'>
+            <div className='text-center mb-12 lg:mb-16 relative z-50'>
                 <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-[60px] heading font-semibold text-[#CECECE] mb-6'>
                     Premium Social Media Accounts for Every Need
                 </h1>
@@ -65,7 +67,7 @@ const ServiceCard = () => {
                 </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12 lg:mt-[120px]'>
+            <div className='relative z-50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12 lg:mt-[120px]'>
                 {services.map((service) => (
                     <div style={{
                         borderImage: 'linear-gradient(113.18deg, rgba(255, 255, 255, 0.5) -5.09%, rgba(255, 255, 255, 0) 55.69%), linear-gradient(287.9deg, rgba(255, 255, 255, 0.5) -6.1%, rgba(255, 255, 255, 0) 19.35%)',
@@ -77,7 +79,11 @@ const ServiceCard = () => {
                     </div>
                 ))}
             </div>
+            <div>
+                <Image className='contact_layer absolute right-[-31%] bottom-[0%] z-10' src={shadow3} alt="" />
+                <Image className='contact_layer absolute right-[-20%] bottom-[26%] z-10 opacity-[0.3]' src={layer3} alt="" />
 
+            </div>
         </div>
     )
 }

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import s1 from '../../../public/s1.png';
 import s2 from '../../../public/s2.png';
@@ -11,10 +12,13 @@ import yt from '../../../public/youtube.png'
 import ball from '../../../public/ball.png'
 import faq_layer from '../../../public/faq_layer.png';
 import faq_shadow from '../../../public/faq_shadow.png';
+import { usePathname } from 'next/navigation';
 
 const Service = () => {
+  const pathname = usePathname();
+  console.log(pathname, "SDFSD")
   return (
-    <div className='service_wrapper lg:px-[227px] px-4 lg:mb-[294px] lg:pt-[70px] relative z-50'>
+    <div className={`service_wrapper lg:px-[227px] px-4 lg:pt-[70px] relative z-50    ${pathname == '/services' ? "mb-10" : " lg:mb-[294px]"}`}>
       <div className="flex lg:flex-row flex-col justify-center items-center service_gap gap-[123px]">
         <div className='relative service_bg pl-[95px] pr-[74px] '>
           <p className='text-base font-medium pt-10 platform'>Our Platforms</p>
@@ -47,8 +51,13 @@ const Service = () => {
       </div>
       <Image className='absolute yt_size right-7 top-[-7%] md:top-[20%]' src={yt} alt="" />
 
-      <Image className='absolute top-[63%] opacity-[0.3] right-0 lg:block hidden' src={faq_layer} alt="" />
-      <Image className='absolute top-0 right-0 lg:block hidden' src={faq_shadow} alt="" />
+      {
+        pathname == '/services' ? "" : <>
+          <Image className='absolute top-[63%] opacity-[0.3] right-0 lg:block hidden' src={faq_layer} alt="" />
+          <Image className='absolute top-0 right-0 lg:block hidden' src={faq_shadow} alt="" />
+        </>
+      }
+
     </div>
   )
 }

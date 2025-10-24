@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const InsideAccounts = () => {
     return (
-        <div className='about lg:px-[140px] px-5 mt-40'>
+        <div className='about lg:px-[140px] px-5 mt-10 lg:mt-40 lg:mb-[188px] mb-10 relative z-50 '>
             <div className="flex lg:flex-row flex-col lg:gap-[170px]  gap-10 items-center about_section">
 
                 <div className='max-w-[715px] w-full'>

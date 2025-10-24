@@ -624,6 +624,10 @@ button {
     gap: 71px;
     margin-bottom: 32px;
   }
+
+  .contact_layer {
+    display: none;
+  }
 }
 
 /* responsive */
@@ -822,7 +826,7 @@ button {
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .howItworks h3 {
@@ -976,6 +980,10 @@ button {
   .about_emp_btn {
     flex-direction: row !important;
   }
+
+  .contact_layer {
+    display: none;
+  }
 }
 
 @media (min-width:431px) and (max-width: 768px) {
@@ -985,6 +993,10 @@ button {
     height: 40px;
     font-size: 12px;
     font-weight: 600;
+  }
+
+  .contact_layer {
+    display: none;
   }
 
   .emp_btn_pos {
@@ -1143,6 +1155,10 @@ button {
 
   .emp_bg p {
     font-size: 14px;
+  }
+
+  .contact_layer {
+    display: none;
   }
 }
 
@@ -1333,6 +1349,9 @@ button {
   }
 
   /* smm panel */
+  .contact_layer {
+    display: none;
+  }
 }
 
 @media (min-width:1025px) and (max-width: 1440px) {
@@ -1499,10 +1518,15 @@ button {
   }
 
   /* smm panel */
-
+  .contact_layer {
+    display: none;
+  }
 }
 
 @media (min-width:1441px) and (max-width: 1600px) {
+  .contact_layer {
+    display: none;
+  }
 
   /* service */
   .service_wrapper {

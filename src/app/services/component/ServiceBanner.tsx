@@ -9,6 +9,7 @@ import objectImage from '../../../../public/object.png';
 import Image from 'next/image';
 import Header from '@/app/components/Header';
 
+
 const ServiceBanner = () => {
     return (
         <div className="banner lg:px-[106px] banner_px px-4 pt-[92px] pb-[162px] text-white relative overflow-hidden">

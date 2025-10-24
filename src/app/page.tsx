@@ -17,7 +17,7 @@ const Home = () => {
       <div className='relative'>
         <Banner />
         <Counter />
-        <div className='absolute lg:bottom-[-21%] lg:left-[50%] z-10'>
+        <div className='contact_layer absolute lg:bottom-[-21%] lg:left-[50%] z-10'>
           <Image src={shadow} alt="" />
         </div>
       </div>
